@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "name": "Connecteur Eau du Grand Lyon",
+  "type": "konnector",
+  "language": "node",
+  "icon": "logo.jpg",
+  "slug": "eaudugrandlyon",
+  "source": "git@github.com:lmorel3/cozy-konnector-eaudugrandlyon.git",
+  "editor": "Laurent Morel",
+  "vendor_link": "https://lmorel3.fr",
+  "categories": ["energy"],
+  "fields": {
+    "login": {
+      "type": "text"
+    },
+    "password": {
+      "type": "password"
+    },
+    "advancedFields": {
+      "folderPath": {
+        "advanced": true,
+        "isRequired": false
+      }
+    }
+  },
+  "data_types": [
+    "bill"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "bank operations": {
+      "type": "io.cozy.bank.operations"
+    },
+    "bills": {
+      "type": "io.cozy.bills"
+    },
+    "files": {
+      "type": "io.cozy.files"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts",
+      "verbs": ["GET"]
+    }
+  },
+  "developer": {
+    "name": "Laurent Morel",
+    "url": "https://lmorel3.fr"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Récupère la liste des factures",
+      "long_description": "Récupère la liste des factures d'un compte EauDuGrandLyon",
+      "permissions": {
+        "bank operations": {
+          "description": "Utilisé pour relier les factures à des operations bancaires"
+        },
+        "bills": {
+          "description": "Utilisé pour sauver les données des factures"
+        },
+        "files": {
+          "description": "Utilisé pour sauvegarder les factures"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        }
+      }
+    },
+    "en": {
+      "short_description": "Fetch a list of bills",
+      "long_description": "Fetch a list of bills from a EauDuGrandLyon account",
+      "permissions": {
+        "bank operations": {
+          "description": "Required to link bank operations to bills"
+        },
+        "bills": {
+          "description": "Required to save the bills data"
+        },
+        "files": {
+          "description": "Required to save the bills"
+        },
+        "accounts": {
+          "description": "Required to get the account's data"
+        }
+      }
+    }
+  },
+  "banksTransactionRegExp": "SOC EAU GD LYON",
+  "manifest_version": "2"
+}
