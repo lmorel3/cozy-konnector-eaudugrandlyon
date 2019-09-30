@@ -1,6 +1,6 @@
 {
   "name": "cozy-konnector-eaudugrandlyon",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Connecteur permettant de récupérer les factures d'un compte EauDuGrandLyon",
   "repository": {
     "type": "git",
