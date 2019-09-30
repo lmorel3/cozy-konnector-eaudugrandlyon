@@ -3,9 +3,8 @@ node_js:
 - '8'
 env:
   global:
-  - DEPLOY_REPOSITORY="git@github.com:konnectors/template.git"
-  # Token to access Cozy Registry, you should replace it with a token specific to this konnector
-  - secure: CQ44ZVjPAIVRvGgMcduSAX4VmaOrzF3nrJXPFUsNQ2tMVVdaAlI1zTNkdfntqigZgz6Mpk9x+2FcA8qrkNzQ4cW0lPP9f5dBtSH1xetfpXDFKprW4bqzmhgXSXJFTOYxkChOBPmCYJr+Vv4XqDkv/dBEPdfRSgvVyd5YxHSd5HBU91rKyR+Hox7LTnhmlXleLIs11EQgp7RK+L28MBCtCqAa2niFlKKRlqupm2FSpZzxCh9qeY0wKCQzPE+QZUm4waJ1SUGKQwbzAfyOxu2O6rwzaTSknfdJoSX6AMxjRTWBC9c3VfUGM3wjVJIqMhiUj2FQhVIjiDyX/W60/q3UMC5WYzSvEDDfhnKCPwiUKSU7HvSxx9q2YP34evxKo7KPahz9zLlQZvW+GBMyI9hbMDBTALuQVVzhftsvqfrogyYhkEPviiYiVADWNxhacsbUjRA5svXnZvtmCPo7fLFwel/krgC5Z8AwAY0YxWjSHNVScUkieSDCrlxrC09vTtG60unt9gtXbD5ruUkDLWSUwHBv2p0WY1TdP+2Vlf3yYfBvEVbqi59AxG+T17bq7Xv3QZnkrwC+UOCNCeg+gHPv+fRpUaYWzCO4uaoY/nlJa7RulQFhGca3A//6xRo/KgWw9JJnOXJelNjE9oHCUu9xShotUZKOF+O93V/BRqs9ITo=
+  - DEPLOY_REPOSITORY="git@github.com:konnectors/eaudugrandlyon.git"
+  - secure: GovACQ12CGHmnsfOU0ANeYO0Cmsg3BHdDEqb96MDK04tcEo4Ostl5bSWAe+kY1V/CgtOs7yBi8dPYtS5KMfI3Px2PGUteDzQJe7inWf8aKQcHQakaCD+QbMoW/FKz7iUFH0wSW/Py4OFY5AVP4hkdrfYaDg8NvxQeoOoGJu1h6ySYszYPX6H6bU87J/YJOO4JP3y0vUQ5CUqaJr+WzgaF3o9hX9SOAeF4lxO19aSnnNttiFRBl47KffuTDKF9Go68DIu59ltD81ORmReiHcomQXCGoFlfr1WGn6AIKc8rLzivGZ8BKitZnZdA0zc4f1Ag2mBeIw+2tRLXZRMU8b58hAN2BlI2pJCawKKpo604juFaMYVuuakmzV5IHER8CR6YXQIHrujSE1b9tZxAlbsFHtwH2wwGEmJ/iMVga0+tjP0wA/CM8y3NO6n/VcId9TN+thMKQzUu+t0d8PnA4+PVNB8FQQnju4oJgf6DrqV1Leq/zxxUN46ynXDRoUcFKf+d0WOJV+iB7Cs3efVmrvhlGKiWNyNF6L7n7XvpebSsrI8rL/dIF/nstoipB77YZWevKTyaZS7EYAfmVmPLcFX3a89wMEpuhgal00AYJA6W5CvzLyKjwJM8l2gOD5eYpbx/s5J8Zh2QkbR/w8m+G1oSUqTM1ANsYxuIeTR4fbBgwQ=
 cache:
   yarn: true
   directories:
@@ -30,9 +29,8 @@ deploy:
   on:
     tags: true
 before_install:
-# run the yarn travisDeployKey command to genrate this
-# - openssl aes-256-cbc -K $encrypted_0b21ecdcf920_key -iv $encrypted_0b21ecdcf920_iv
-#   -in github_deploy_key.enc -out /tmp/github_deploy_key -d
+- openssl aes-256-cbc -K $encrypted_3749937bc53f_key -iv $encrypted_3749937bc53f_iv
+  -in github_deploy_key.enc -out /tmp/github_deploy_key -d
 - eval "$(ssh-agent -s)"
 - chmod 600 /tmp/github_deploy_key
 - ssh-add /tmp/github_deploy_key

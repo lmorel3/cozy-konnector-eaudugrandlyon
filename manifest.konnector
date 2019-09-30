@@ -5,9 +5,9 @@
   "language": "node",
   "icon": "logo.jpg",
   "slug": "eaudugrandlyon",
-  "source": "git@github.com:lmorel3/cozy-konnector-eaudugrandlyon.git",
-  "editor": "Laurent Morel",
-  "vendor_link": "https://lmorel3.fr",
+  "source": "git@github.com:konnectors/eaudugrandlyon.git",
+  "editor": "lmorel3",
+  "vendor_link": "https://agence.eaudugrandlyon.com/",
   "categories": ["energy"],
   "fields": {
     "login": {
