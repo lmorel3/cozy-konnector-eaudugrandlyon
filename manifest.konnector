@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.0.0",
   "name": "Connecteur Eau du Grand Lyon",
   "type": "konnector",
   "language": "node",
@@ -8,9 +8,7 @@
   "source": "git@github.com:konnectors/eaudugrandlyon.git",
   "editor": "lmorel3",
   "vendor_link": "https://agence.eaudugrandlyon.com/",
-  "categories": [
-    "energy"
-  ],
+  "categories": ["energy"],
   "fields": {
     "login": {
       "type": "text"
@@ -41,19 +39,14 @@
     },
     "accounts": {
       "type": "io.cozy.accounts",
-      "verbs": [
-        "GET"
-      ]
+      "verbs": ["GET"]
     }
   },
   "developer": {
     "name": "Laurent Morel",
     "url": "https://lmorel3.fr"
   },
-  "langs": [
-    "fr",
-    "en"
-  ],
+  "langs": ["fr", "en"],
   "locales": {
     "fr": {
       "short_description": "Récupère la liste des factures",
