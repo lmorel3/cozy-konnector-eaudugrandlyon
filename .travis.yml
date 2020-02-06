@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-- '8'
+- '12'
 env:
   global:
-  - DEPLOY_REPOSITORY="git@github.com:konnectors/eaudugrandlyon.git"
+  # REGISTRY_TOKEN(editor=cozy, app=eaudugrandlyon)
   - secure: GovACQ12CGHmnsfOU0ANeYO0Cmsg3BHdDEqb96MDK04tcEo4Ostl5bSWAe+kY1V/CgtOs7yBi8dPYtS5KMfI3Px2PGUteDzQJe7inWf8aKQcHQakaCD+QbMoW/FKz7iUFH0wSW/Py4OFY5AVP4hkdrfYaDg8NvxQeoOoGJu1h6ySYszYPX6H6bU87J/YJOO4JP3y0vUQ5CUqaJr+WzgaF3o9hX9SOAeF4lxO19aSnnNttiFRBl47KffuTDKF9Go68DIu59ltD81ORmReiHcomQXCGoFlfr1WGn6AIKc8rLzivGZ8BKitZnZdA0zc4f1Ag2mBeIw+2tRLXZRMU8b58hAN2BlI2pJCawKKpo604juFaMYVuuakmzV5IHER8CR6YXQIHrujSE1b9tZxAlbsFHtwH2wwGEmJ/iMVga0+tjP0wA/CM8y3NO6n/VcId9TN+thMKQzUu+t0d8PnA4+PVNB8FQQnju4oJgf6DrqV1Leq/zxxUN46ynXDRoUcFKf+d0WOJV+iB7Cs3efVmrvhlGKiWNyNF6L7n7XvpebSsrI8rL/dIF/nstoipB77YZWevKTyaZS7EYAfmVmPLcFX3a89wMEpuhgal00AYJA6W5CvzLyKjwJM8l2gOD5eYpbx/s5J8Zh2QkbR/w8m+G1oSUqTM1ANsYxuIeTR4fbBgwQ=
 cache:
   yarn: true
@@ -16,7 +16,6 @@ branches:
 script:
 - yarn lint
 - yarn build
-- yarn run check
 deploy:
 - provider: script
   skip-cleanup: true
