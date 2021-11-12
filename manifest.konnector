@@ -93,5 +93,8 @@
     }
   },
   "banksTransactionRegExp": "SOC EAU GD LYON",
+  "features": [
+    "DOC_QUALIFICATION_V2"
+  ],
   "manifest_version": "2"
 }

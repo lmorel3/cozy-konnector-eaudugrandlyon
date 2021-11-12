@@ -9,8 +9,12 @@ const {
   scrape,
   saveBills,
   log,
-  utils
+  utils,
+  cozyClient
 } = require('cozy-konnector-libs')
+
+const models = cozyClient.new.models
+const { Qualification } = models.document
 
 const moment = require('moment')
 
@@ -96,6 +100,11 @@ function parseDocuments($) {
       metadata: {
         importDate: new Date(),
         version: 1
+      },
+      fileAttributes: {
+        metadata: {
+          qualification: Qualification.getByLabel('water_invoice')
+        }
       }
     }))
 }
