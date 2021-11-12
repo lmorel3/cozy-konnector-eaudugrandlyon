@@ -103,6 +103,13 @@ function parseDocuments($) {
       },
       fileAttributes: {
         metadata: {
+          contentAuthor: 'https://agence.eaudugrandlyon.com/',
+          issueDate: utils.formatDate(doc.title),
+          datetime: utils.formatDate(doc.title),
+          datetimeLabel: `issueDate`,
+          invoiceNumber: `${doc.vendorRef}`,
+          isSubscription: true,
+          carbonCopy: true,
           qualification: Qualification.getByLabel('water_invoice')
         }
       }

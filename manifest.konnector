@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "name": "Eau du Grand Lyon",
   "type": "konnector",
   "language": "node",
@@ -94,7 +94,8 @@
   },
   "banksTransactionRegExp": "SOC EAU GD LYON",
   "features": [
-    "DOC_QUALIFICATION_V2"
+    "DOC_QUALIFICATION_V2",
+    "CARBON_COPY"
   ],
   "manifest_version": "2"
 }
