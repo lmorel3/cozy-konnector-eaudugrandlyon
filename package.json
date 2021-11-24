@@ -1,6 +1,6 @@
 {
   "name": "cozy-konnector-eaudugrandlyon",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Connecteur permettant de récupérer les factures d'un compte EauDuGrandLyon",
   "repository": {
     "type": "git",
@@ -42,7 +42,7 @@
   "devDependencies": {
     "copy-webpack-plugin": "9.1.0",
     "cozy-app-publish": "0.28.0",
-    "cozy-jobs-cli": "1.16.5",
+    "cozy-jobs-cli": "1.16.6",
     "eslint-config-cozy-app": "2.1.1",
     "git-directory-deploy": "1.5.1",
     "husky": "4.2.5",
