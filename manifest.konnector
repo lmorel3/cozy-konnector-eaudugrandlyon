@@ -39,6 +39,9 @@
     "files": {
       "type": "io.cozy.files"
     },
+    "carbon_copy": {
+      "type": "io.cozy.certified.carbon_copy"
+    },
     "accounts": {
       "type": "io.cozy.accounts",
       "verbs": [
@@ -59,6 +62,9 @@
       "short_description": "Récupère la liste des factures",
       "long_description": "Récupère la liste des factures d'un compte EauDuGrandLyon",
       "permissions": {
+        "carbon_copy": {
+          "description": "Utilisé pour certifier que vos fichiers sont copie conforme avec les documents d'origine"
+        },
         "bank operations": {
           "description": "Utilisé pour relier les factures à des operations bancaires"
         },
@@ -77,6 +83,9 @@
       "short_description": "Fetch a list of bills",
       "long_description": "Fetch a list of bills from a EauDuGrandLyon account",
       "permissions": {
+        "carbon_copy": {
+          "description": "Required for carbon copy documents"
+        },
         "bank operations": {
           "description": "Required to link bank operations to bills"
         },
@@ -96,8 +105,10 @@
     "water_invoice"
   ],
   "features": [
+    "BILLS",
     "DOC_QUALIFICATION_V2",
-    "SENTRY_V2"
+    "SENTRY_V2",
+    "CARBON_COPY"
   ],
   "banksTransactionRegExp": "SOC EAU GD LYON",
   "manifest_version": "2"
