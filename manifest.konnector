@@ -92,9 +92,13 @@
       }
     }
   },
-  "banksTransactionRegExp": "SOC EAU GD LYON",
-  "features": [
-    "DOC_QUALIFICATION_V2"
+  "qualification_labels": [
+    "water_invoice"
   ],
+  "features": [
+    "DOC_QUALIFICATION_V2",
+    "SENTRY_V2"
+  ],
+  "banksTransactionRegExp": "SOC EAU GD LYON",
   "manifest_version": "2"
 }
