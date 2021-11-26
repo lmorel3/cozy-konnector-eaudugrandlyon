@@ -74,6 +74,9 @@ function parseDocuments($) {
       title: {
         parse: normalizeDate
       },
+      vendorRef: {
+        sel: 'td:nth-child(2)'
+      },
       amount: {
         sel: 'td:nth-child(3)',
         parse: normalizePrice
