@@ -106,6 +106,7 @@
   ],
   "features": [
     "BILLS",
+    "VENDOR_REF",
     "DOC_QUALIFICATION_V2",
     "SENTRY_V2",
     "CARBON_COPY"
