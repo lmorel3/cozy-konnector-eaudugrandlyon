@@ -44,6 +44,7 @@ async function start(fields) {
 
   log('info', 'Saving data to Cozy')
   await saveBills(bills, fields, {
+    fileIdAttributes: ['vendorRef'],
     identifiers: ['SOC EAU GD LYON']
   })
 }
@@ -99,6 +100,7 @@ function parseDocuments($) {
       date: new Date(),
       currency: 'EUR',
       filename: formatFilename(doc),
+      fileIdAttributes: ['vendorRef'],
       vendor: VENDOR,
       metadata: {
         importDate: new Date(),
