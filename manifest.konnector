@@ -3,7 +3,7 @@
   "name": "Eau du Grand Lyon",
   "type": "konnector",
   "language": "node",
-  "icon": "logo.jpg",
+  "icon": "logo.png",
   "slug": "eaudugrandlyon",
   "source": "git@github.com:konnectors/eaudugrandlyon.git",
   "editor": "lmorel3",
